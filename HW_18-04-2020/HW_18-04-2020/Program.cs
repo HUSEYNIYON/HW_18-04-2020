@@ -16,11 +16,15 @@ namespace HW_18_04_2020
             Console.WriteLine("Operand Multipy:");
             Console.WriteLine("Operand Divide:");
 
-            int Gen1 = Convert.ToInt32(Console.ReadLine());
-            int Gen2 = Convert.ToInt32(Console.ReadLine());
+            double Gen1 = Convert.ToInt32(Console.ReadLine());
+            double Gen2 = Convert.ToInt32(Console.ReadLine());
 
-            command<int> do_it = Calculator<double>.SUM<int>;
+            command<double> do_it = Calculator<double>.SUM<double>;
             Console.WriteLine($"Sum={do_it.Invoke(Gen1,Gen2)}");
+
+            command<double> do_it1 = Calculator<double>.MIN<double>;
+            Console.WriteLine($"Min={do_it1.Invoke(Gen1, Gen2)}");
+
             Console.ReadKey();
 
 
