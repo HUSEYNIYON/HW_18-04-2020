@@ -25,6 +25,8 @@ namespace HW_18_04_2020
             command<double> do_it1 = Calculator<double>.MIN<double>;
             Console.WriteLine($"Min={do_it1.Invoke(Gen1, Gen2)}");
 
+            command<double> do_it3 = Calculator<double>.MUL<double>;
+            Console.WriteLine($"Mul={do_it3.Invoke(Gen1, Gen2)}");
             Console.ReadKey();
 
 
